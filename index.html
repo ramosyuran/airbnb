@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Locations de vacances, logements, expériences et lieux - Airbnb</title>
+  </head>
+
+  <body>
+
+    <!-- header -->
+
+    <header>
+
+      <figure>
+        <img src="img/logo.png" alt="airbnblogo">
+      </figure>
+
+      <nav>
+        <ul>
+          <li><a href="#">Devenez hôte</a></li>
+          <li><a href="#">Aide</a></li>
+          <li><a href="#">Inscription</a></li>
+          <li><a href="#">Connexion</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div class="container">
+
+      <section class="top">
+
+        <h1><span>Où souhaitez-vous aller ?</span> Votre prochain voyage commence sur Airbnb.</h1>
+        <form id="other" action="index.html" method="post">
+          <label for="ou">Où</label><input type="text" name="ou" id="ou" placeholder="Destination, ville ou adresse">
+          <label for="quand">Quand</label><input type="text" name="quand" placeholder="Arrivée"><input type="text" name="quand" placeholder="Départ">
+          <label for="voyageurs">Voyageurs</label><select name="voyageurs" id="voyageurs">
+            <option value="adulte">Adulte</option>
+            <option value="enfant">Enfant</option>
+            <option value="bebe">Bébé</option>
+          </select>
+          <input type="submit" name="submit" value="Rechercher">
+        </form>
+        <form id="phone" action="index.html" method="post">
+          <input type="search" name="search" placeholder="Rechercher">
+        </form>
+
+      </section>
+
+      <h2>Nouveautés à Harlem</h2>
+
+      <section class="bot">
+
+        <article class="offerts">
+          <figure>
+            <img src="img/img1.jpg" alt="offersimg">
+          </figure>
+          <p><a href="#"><span>€43</span> 2 heures · Harlem NYC Art <span class="dont">& history theater</span></a></p>
+        </article>
+
+        <article class="offerts">
+          <figure>
+            <img src="img/img2.jpg" alt="offersimg">
+          </figure>
+          <p><a href="#"><span>€238</span> 2 heures · Fashion & Hip Hop</a></p>
+        </article>
+
+        <article class="offerts">
+          <figure>
+            <img src="img/img3.jpg" alt="offersimg">
+          </figure>
+          <p><a href="#"><span>€66</span> 2 heures · Harlem & Culture</a></p>
+        </article>
+
+        <article class="offerts">
+          <figure>
+            <img src="img/img4.jpg" alt="offersimg">
+          </figure>
+          <p><a href="#"><span>€56</span> 2 heures · Workshop & Fashion</a></p>
+        </article>
+
+        </section>
+
+        <h2>Réservées à l'instant</h2>
+
+        <section class="bot">
+
+          <article class="offerts">
+            <figure>
+              <img src="" alt="offersimg">
+            </figure>
+            <p><a href="#"><span>€48</span> Reclaim your creativity in crafting</a></p>
+          </article>
+
+          <article class="offerts">
+            <figure>
+              <img src="" alt="offersimg">
+            </figure>
+            <p><a href="#"><span>€72</span> 2 heures · Museum & Comedy</a></p>
+            <p>20 commentaires</p> <!--ko skeci de kes strela ants comentario -->
+          </article>
+
+          <article class="offerts">
+            <figure>
+              <img src="" alt="offersimg">
+            </figure>
+            <p><a href="#"><span>€33</span> Ride to a live DJ mashup set by wait what</a></p>
+          </article>
+
+          <article class="offerts">
+            <figure>
+              <img src="" alt="offersimg">
+            </figure>
+            <p><a href="#"><span>€56</span> 3 heures · Local eateries & Tapas</a></p>
+            <p>4 commentaires</p> <!--ko skeci de kes strela ants comentario -->
+          </article>
+
+        </section>
+
+    </div>
+
+  </body>
+
+</html>

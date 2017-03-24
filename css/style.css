@@ -1,0 +1,88 @@
+body{
+  margin: auto;
+  font-family: arial;
+  color: #575757;
+}
+
+h1 span{
+  color: #FB5C5C;
+}
+
+h1{
+  font-weight: normal;
+  font-size: 25px;
+}
+
+header nav, #other{
+  display: none;
+}
+
+header figure{
+  width: 30px;
+}
+
+header img{
+  width: 30px;
+}
+
+input{
+  height: 50px;
+  padding: 15px;
+  width: 100%;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+h2{
+  font-size: 18px;
+  margin-top: 20%;
+}
+
+.bot{
+  width: 100%;
+  /*height: 500px;*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.dont{
+  display: none;
+}
+
+.bot figure{
+  width: 100%;
+  margin: 0;
+}
+
+.bot img{
+  width: 110px;
+}
+
+.bot p{
+  font-size: 12px;
+}
+
+.offerts{
+  /*background: orange;*/
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1%;
+  width: 45%;
+  justify-content: center;
+  align-items: center;
+}
+
+.bot p span{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+a{
+  color: #575757;
+  text-decoration: none;
+}
