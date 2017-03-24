@@ -1,5 +1,5 @@
 body{
-  margin: auto;
+  margin: 0;
   font-family: arial;
   color: #575757;
 }
@@ -38,10 +38,10 @@ input{
 
 h2{
   font-size: 18px;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
-.bot{
+.bot, .bot3{
   width: 100%;
   display: flex;
   align-items: center;
@@ -55,24 +55,41 @@ h2{
   width: 100%;
 }
 
-.dont{
+.dont, .bot article:nth-child(3), .bot article:nth-child(4),
+.bot2 article:nth-child(2), .bot2 article:nth-child(3),
+.bot3 article:nth-child(4),
+.bot3 article:nth-child(5),
+.bot3 article:nth-child(6){
   display: none;
 }
 
-.bot figure, .bot2 figure{
+.bot figure, .bot2 figure, .bot3 figure{
   width: 100%;
   margin: 0;
 }
 
-.bot img {
-  width: 110px;
+.bot img{
+  width: 100%;
 }
 
 .bot2 img{
-  width: 200px;
+  width: 100%;
 }
 
-.bot p, .bot2 p{
+.bot3 img {
+  width: 100%;
+}
+
+.last img{
+  width: 100%;
+}
+
+.last figure{
+  width: 100%;
+  margin: 0;
+}
+
+.bot p, .bot2 p, .bot3 p{
   font-size: 12px;
 }
 
@@ -82,6 +99,15 @@ h2{
   flex-wrap: wrap;
   margin: 1%;
   width: 45%;
+  justify-content: center;
+  align-items: center;
+}
+
+.offerts3{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 25%;
   justify-content: center;
   align-items: center;
 }
@@ -100,6 +126,19 @@ h2{
 .bot p span{
   font-weight: bold;
   font-size: 14px;
+}
+
+.last{
+  width: 100%;
+  margin: 0;
+}
+
+.last button{
+  background: #00847E;
+  padding: 3%;
+  border: none;
+  color: white;
+  border-radius: 4%;
 }
 
 a{
