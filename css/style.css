@@ -63,30 +63,13 @@ h2{
   display: none;
 }
 
-.bot figure, .bot2 figure, .bot3 figure{
+.bot figure, .bot2 figure, .bot3 figure, .last figure{
   width: 100%;
   margin: 0;
 }
 
-.bot img{
+.bot img, .last img, .bot2 img, .bot3 img {
   width: 100%;
-}
-
-.bot2 img{
-  width: 100%;
-}
-
-.bot3 img {
-  width: 100%;
-}
-
-.last img{
-  width: 100%;
-}
-
-.last figure{
-  width: 100%;
-  margin: 0;
 }
 
 .bot p, .bot2 p, .bot3 p{
@@ -94,13 +77,12 @@ h2{
 }
 
 .offerts{
-  /*background: orange;*/
   display: flex;
   flex-wrap: wrap;
   margin: 1%;
   width: 45%;
-  justify-content: center;
-  align-items: center;
+  /*justify-content: center;
+  align-items: center;*/
 }
 
 .offerts3{
@@ -108,8 +90,8 @@ h2{
   flex-wrap: wrap;
   margin: auto;
   width: 25%;
-  justify-content: center;
-  align-items: center;
+  /*justify-content: center;
+  align-items: center;*/
 }
 
 .logements{
@@ -119,11 +101,7 @@ h2{
   /*background: yellow;*/
 }
 
-.logements p{
-  margin: 0;
-}
-
-.bot p span{
+.bot p span, .logements p span{
   font-weight: bold;
   font-size: 14px;
 }
@@ -135,7 +113,7 @@ h2{
 
 .last button{
   background: #00847E;
-  padding: 3%;
+  padding: 10px;
   border: none;
   color: white;
   border-radius: 4%;
@@ -144,4 +122,79 @@ h2{
 a{
   color: #575757;
   text-decoration: none;
+}
+
+footer{
+  width: 100%;
+  margin: 10px auto;
+}
+
+.foot{
+  width: 100%;
+  border-top: 1px lightgrey solid;
+  display: flex;
+  justify-content: center;
+}
+
+.foot select{
+  width: 45%;
+  margin: 5px;
+}
+
+.end2{
+  width: 90%;
+  margin: 2% auto;
+  border-top: 1px lightgrey solid;
+}
+
+.dontt{
+  display: none;
+}
+
+.footlg figure{
+  width: 20px;
+  margin: 0;
+}
+
+.footlg img{
+  width: 20px;
+}
+
+.footlg p {
+  margin-left: 10px;
+}
+
+.footlk figure{
+  width: 20px;
+  margin: 0 2%;
+}
+
+.footlk img{
+  width: 20px;
+}
+
+.footlk, .footlg{
+  display: flex;
+  width: 100%;
+  margin: 0;
+  /*justify-content: space-between;*/
+  align-items: baseline;
+  /*justify-content: space-around;*/
+}
+
+.footlk p{
+  font-size: 14px;
+}
+
+.footlk a:hover{
+  text-decoration: underline;
+}
+
+.footlk p, .footlk figure{
+  align-content: space-between;
+}
+
+@media (min-width: 768px) {
+  
+
 }
