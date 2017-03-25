@@ -389,6 +389,7 @@ footer{
   .dontt li{
     list-style: none;
     font-size: 14px;
+    line-height: 20px;
   }
 
   .dontt span{
@@ -398,6 +399,10 @@ footer{
   .end2{
     display: flex;
     justify-content: space-between;
+  }
+
+  .end{
+    justify-content: center;
   }
 
   .footlk{
