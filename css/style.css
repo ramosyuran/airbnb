@@ -222,12 +222,12 @@ footer{
 }
 
 .footlk figure{
-  width: 20px;
-  margin: 0 2%;
+  width: 18px;
+  margin: 0 1%;
 }
 
 .footlk img{
-  width: 20px;
+  width: 18px;
 }
 
 .footlk, .footlg{
@@ -241,7 +241,7 @@ footer{
 
 .footlk p{
   font-size: 14px;
-  padding: 5px;
+  padding: 1%;
 }
 
 .footlk a:hover{
@@ -276,7 +276,7 @@ footer{
   }
 
   .end{
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .navtpc ul{
@@ -400,4 +400,33 @@ footer{
     justify-content: space-between;
   }
 
+  .footlk{
+    justify-content: flex-end;
+  }
+
+}
+
+@media (min-width: 1024px){
+  .container{
+    width: 85%;
+  }
+
+  .bot article:nth-child(4),
+  .bot2 article:nth-child(3),
+  .bot3 article:nth-child(5),
+  .bot3 article:nth-child(6){
+    display: block;
+  }
+
+  .top h1{
+    width: 50%;
+  }
+
+  /*.footlk{
+    width: 50%;
+  }*/
+
+  .end2{
+    justify-content: space-between;
+  }
 }
