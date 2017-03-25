@@ -19,6 +19,41 @@ header nav, #other{
 
 header figure{
   width: 30px;
+  cursor: pointer;
+}
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+   width: 100%;
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: white;
+   min-width: 100%;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
+.dropdown-content a {
+   color: #575757;
+   padding: 20px;
+   text-decoration: none;
+   display: block;
+}
+
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+#d{
+  border-bottom: 1px lightgrey solid;
+}
+
+#t{
+  border-top: 1px lightgrey solid;
 }
 
 header img{
@@ -195,6 +230,6 @@ footer{
 }
 
 @media (min-width: 768px) {
-  
+
 
 }
