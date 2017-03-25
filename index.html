@@ -15,16 +15,12 @@
 
     <header>
 
-      <!-- <figure>
-        <img src="img/logo.png" alt="airbnblogo">
-      </figure> -->
-
       <div class="dropdown">
         <figure>
           <img src="img/logo.png" alt="airbnblogo">
         </figure>
        <div class="dropdown-content">
-         <a href="#" id="d">Page d'accueil</a>
+         <a href="index.html" id="d">Page d'accueil</a>
          <a href="#">Télécharger l'application</a>
          <a href="#">Devenez hôte</a>
          <a href="#">Inscripion</a>
@@ -33,15 +29,21 @@
        </div>
       </div>
 
-      <nav>
-        <ul>
-          <li><a href="#">Devenez hôte</a></li>
-          <li><a href="#">Aide</a></li>
-          <li><a href="#">Inscription</a></li>
-          <li><a href="#">Connexion</a></li>
-        </ul>
-      </nav>
+      <div class="navtpc">
 
+        <figure>
+          <img src="img/logo.png" alt="airbnblogo">
+        </figure>
+        <nav>
+          <ul>
+            <li><a href="#">Devenez hôte</a></li>
+            <li><a href="#">Aide</a></li>
+            <li><a href="#">Inscription</a></li>
+            <li><a href="#">Connexion</a></li>
+          </ul>
+        </nav>
+
+      </div>
     </header>
 
     <!-- header end -->
@@ -55,16 +57,35 @@
       <section class="top">
 
         <h1><span>Où souhaitez-vous aller ?</span> Votre prochain voyage commence sur Airbnb.</h1>
+
         <form id="other" action="index.html" method="post">
-          <label for="ou">Où</label><input type="text" name="ou" id="ou" placeholder="Destination, ville ou adresse">
-          <label for="quand">Quand</label><input type="text" name="quand" placeholder="Arrivée"><input type="text" name="quand" placeholder="Départ">
-          <label for="voyageurs">Voyageurs</label><select name="voyageurs" id="voyageurs">
-            <option value="adulte">Adulte</option>
-            <option value="enfant">Enfant</option>
-            <option value="bebe">Bébé</option>
-          </select>
-          <input type="submit" name="submit" value="Rechercher">
+
+          <div id="ou">
+            <label for="ou">Où</label>
+            <input type="text" name="ou" id="ou" placeholder="Destination, ville ou adresse">
+          </div>
+
+          <div id="quand">
+            <label for="quand">Quand</label>
+              <div id="quandin">
+                <input type="text" name="quand" placeholder="Arrivée">
+                <input type="text" name="quand" placeholder="Départ">
+              </div>
+          </div>
+
+          <div id="voyageurs">
+            <label for="voyageurs">Voyageurs</label>
+              <select name="voyageurs" id="voyageurs">
+                <option value="adulte">Adulte</option>
+                <option value="enfant">Enfant</option>
+                <option value="bebe">Bébé</option>
+              </select>
+          </div>
+
+          <input type="submit" name="submit" value="R">
+
         </form>
+
         <form id="phone" action="index.html" method="post">
           <input type="search" name="search" placeholder="Rechercher">
         </form>
@@ -145,8 +166,9 @@
 
         <!-- four section in container -->
 
+        <h2>Logements</h2>
+
         <section class="bot2">
-          <h2>Logements</h2>
 
           <article class="logements">
             <figure>
@@ -331,7 +353,6 @@
       </div>
 
     </footer>
-
 
     <!-- end footer -->
 

@@ -13,7 +13,7 @@ h1{
   font-size: 25px;
 }
 
-header nav, #other{
+.navtpc, #other{
   display: none;
 }
 
@@ -60,7 +60,7 @@ header img{
   width: 30px;
 }
 
-input{
+input[name="search"]{
   height: 50px;
   padding: 15px;
   width: 100%;
@@ -76,19 +76,19 @@ h2{
   margin-top: 10%;
 }
 
-.bot, .bot3{
+.bot, .bot3, .bot2{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
 }
 
-.bot2{
+/*.bot2{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-}
+}*/
 
 .dont, .bot article:nth-child(3), .bot article:nth-child(4),
 .bot2 article:nth-child(2), .bot2 article:nth-child(3),
@@ -125,6 +125,7 @@ h2{
   flex-wrap: wrap;
   margin: auto;
   width: 25%;
+  margin: 1%;
   /*justify-content: center;
   align-items: center;*/
 }
@@ -133,6 +134,7 @@ h2{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin: 1%;
   /*background: yellow;*/
 }
 
@@ -199,6 +201,14 @@ footer{
   margin-left: 10px;
 }
 
+.foot select{
+  border: 1px lightgrey solid;
+  border-radius: 0;
+  background: white;
+  padding: 12px;
+  margin-top: 10px;
+}
+
 .footlk figure{
   width: 20px;
   margin: 0 2%;
@@ -230,6 +240,99 @@ footer{
 }
 
 @media (min-width: 768px) {
+
+  .dropdown, #phone{
+    display: none;
+  }
+
+  .bot article:nth-child(3), .bot2 article:nth-child(2),
+  .bot3 article:nth-child(4){
+    display: block;
+  }
+
+  #other, .navtpc{
+    display: flex;
+  }
+
+  .navtpc{
+    /*display: block;*/
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .navtpc ul{
+    list-style: none;
+    display: inline-flex;
+  }
+
+  .navtpc li{
+    margin-right: 30px;
+  }
+
+  h1{
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  h1 span{
+    font-weight: bold;
+  }
+
+  #other{
+    width: 100%;
+    border: 1px lightgrey solid;
+    padding: 10px;
+    border-radius: 1%;
+    justify-content: space-between;
+  }
+
+  #quandin{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #quand{
+    width: 40%;
+  }
+
+  input[name="quand"], input[name="ou"], select[name="voyageurs"]{
+    padding: 5px 0;
+    border: none;
+    background: white;
+    color: #575757;
+  }
+
+  input[name="quand"]{
+  width: 30%;
+  display: flex;
+  }
+
+  input[name="ou"]{
+  width: 100%;
+  }
+
+  input[name="ou"]:focus, input[name="quand"]:focus{
+    border-bottom: 1px #575757 solid;
+  }
+
+  select[name="voyageurs"]{
+    width: 70%;
+  }
+
+  input[name="submit"]{
+    background: #FB5C5C;
+    color: white;
+    padding: 2%;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+  }
+
+  input[name="submit"]:hover{
+    opacity: .9;
+  }
 
 
 }
