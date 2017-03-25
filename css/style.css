@@ -80,7 +80,7 @@ h2{
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
   /*flex-wrap: wrap;*/
 }
 
@@ -107,8 +107,16 @@ h2{
   width: 100%;
 }
 
+.last img{
+  height: 100%;
+}
+
 .bot p, .bot2 p, .bot3 p{
   font-size: 12px;
+}
+
+.bot3 p{
+  font-weight: bold;
 }
 
 .offerts{
@@ -145,7 +153,7 @@ h2{
 
 .last{
   width: 100%;
-  margin: 0;
+  margin: 30px auto;
 }
 
 .last button{
@@ -166,14 +174,13 @@ footer{
   margin: 10px auto;
 }
 
-.foot{
+.foot, .foot2{
   width: 100%;
-  border-top: 1px lightgrey solid;
   display: flex;
   justify-content: center;
 }
 
-.foot select{
+.foot2 select{
   width: 45%;
   margin: 5px;
 }
@@ -181,6 +188,11 @@ footer{
 .end2{
   width: 90%;
   margin: 2% auto;
+  border-top: 1px lightgrey solid;
+}
+
+.end{
+  width: 100%;
   border-top: 1px lightgrey solid;
 }
 
@@ -201,7 +213,7 @@ footer{
   margin-left: 10px;
 }
 
-.foot select{
+.foot2 select{
   border: 1px lightgrey solid;
   border-radius: 0;
   background: white;
@@ -229,6 +241,7 @@ footer{
 
 .footlk p{
   font-size: 14px;
+  padding: 5px;
 }
 
 .footlk a:hover{
@@ -250,7 +263,7 @@ footer{
     display: block;
   }
 
-  #other, .navtpc{
+  #other, .navtpc, .dontt, .end{
     display: flex;
   }
 
@@ -260,6 +273,10 @@ footer{
     align-items: center;
     justify-content: space-between;
 
+  }
+
+  .end{
+    justify-content: flex-start;
   }
 
   .navtpc ul{
@@ -278,6 +295,10 @@ footer{
 
   h1 span{
     font-weight: bold;
+  }
+
+  .bot p, .bot2 p, .bot3 p{
+    font-size: 14px;
   }
 
   #other{
@@ -305,12 +326,12 @@ footer{
   }
 
   input[name="quand"]{
-  width: 30%;
-  display: flex;
+    width: 30%;
+    display: flex;
   }
 
   input[name="ou"]{
-  width: 100%;
+    width: 100%;
   }
 
   input[name="ou"]:focus, input[name="quand"]:focus{
@@ -334,5 +355,49 @@ footer{
     opacity: .9;
   }
 
+  .last{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .lastp{
+    width: 40%;
+  }
+
+  .lastp h3{
+    font-size: 25px;
+  }
+
+  .last figure{
+    width: 50%;
+  }
+
+  .foot2{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 30px;
+  }
+
+  select[name="lang"], select[name="money"]{
+    height: 30%;
+    width: 80%;
+  }
+
+  .dontt li{
+    list-style: none;
+    font-size: 14px;
+  }
+
+  .dontt span{
+    font-weight: bold;
+  }
+
+  .end2{
+    display: flex;
+    justify-content: space-between;
+  }
 
 }
