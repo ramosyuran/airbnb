@@ -252,9 +252,11 @@ footer{
   align-content: space-between;
 }
 
+/*TABLET*/
+
 @media (min-width: 768px) {
 
-  .dropdown, #phone{
+  .dropdown, #phone, input[name="submitpc"]{
     display: none;
   }
 
@@ -411,7 +413,10 @@ footer{
 
 }
 
+/*desktop*/
+
 @media (min-width: 1024px){
+
   .container{
     width: 85%;
   }
@@ -423,13 +428,27 @@ footer{
     display: block;
   }
 
+  input[name="submitpc"]{
+    display: flex;
+  }
+
+  input[name="submit"]{
+    display: none;
+  }
+
   .top h1{
     width: 50%;
   }
 
-  /*.footlk{
-    width: 50%;
-  }*/
+  input[name="submitpc"]{
+    background: #FB5C5C;
+    color: white;
+    padding: 2%;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
 
   .end2{
     justify-content: space-between;
